@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+:root{
+    --cyan-primary: hsl(179, 62%, 43%);
+    --yellow-primary: hsl(71, 73%, 54%);
+    --gray-neutral: hsl(204, 43%, 93%);
+    --gray-blue:hsl(218, 22%, 67%);
+}
+
+body{
+    background-color: var(--gray-neutral);
+}
+
+main{
+    max-width: 700px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    padding: 1em;
+}
+
+.request{
+    background-color: #f8f8ff;
+    width: 100%;
+}
+
+.subscription,
+.reason{
+    background-color: var(--cyan-primary);
+}
