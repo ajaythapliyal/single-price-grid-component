@@ -16,14 +16,17 @@ html, body{
 
 body{
     background-color: var(--gray-neutral);
+    padding: 1em;
 }
 
 main{
-    max-width: 700px;
-    border-radius: 10px;
+    max-width: 650px;
+}
+
+main > div{
     display: flex;
     flex-wrap: wrap;
-
+    width: 100%;
 }
 
 .flex-center{
@@ -33,15 +36,60 @@ main{
 }
 
 section{
-    padding: 1em;
+    padding: 3em;
+    box-sizing: border-box;
+    min-width: 250px;
 }
 
 .request{
-    background-color: #f8f8ff;
-    width: 100%;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.request > h1{
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    color: var(--cyan-primary);
+}
+
+.request > h3{
+    color: var(--yellow-primary);
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.request > p{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: var(--gray-blue);
+    margin-top: 1em;
 }
 
 .subscription,
 .reason{
-    background-color: var(--cyan-primary);
+    flex: 1 1 50%;
+    color: white;
+}
+
+.subscription{
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 10px;
+}
+
+.subscription *{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+.subscription >h3 ~ *{
+    margin-top: 1em;
+}
+
+.reason{
+    background-color: hsla(179, 62%, 43%, 0.9);
+    border-bottom-right-radius: 10px;
 }
