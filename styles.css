@@ -21,6 +21,8 @@ body{
 
 main{
     max-width: 650px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 main > div{
@@ -33,6 +35,7 @@ main > div{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 section{
@@ -43,9 +46,6 @@ section{
 
 .request{
     background-color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    
 }
 
 .request > h1{
@@ -77,19 +77,56 @@ section{
 
 .subscription{
     background-color: hsl(179, 62%, 43%);
-    border-bottom-left-radius: 10px;
 }
 
-.subscription *{
+.subscription *, .reason *{
     font-family: 'Karla', sans-serif;
     font-weight: 400;
 }
 
-.subscription >h3 ~ *{
+.subscription >h3 ~ p{
     margin-top: 1em;
 }
 
+
+
 .reason{
     background-color: hsla(179, 62%, 43%, 0.9);
-    border-bottom-right-radius: 10px;
+}
+
+.reason > p{
+    margin-top: 1em;
+    font-size: 13px;
+    color: hsla(0, 0%, 100%, 0.6);
+    line-height: 1.5em;
+}
+
+.currency{
+    color: var(--gray-neutral);
+}
+.currency > span{
+    font-size: 2em;
+    vertical-align: middle;
+    margin-right: 0.4em;
+    font-weight: 700;
+    color: white;
+}
+
+.currency + p{
+    font-size: 15px;
+}
+
+button{
+    width: 100%;
+    height: 4em;
+    border-radius: 5px;
+    border-style: none;
+    background-color: var(--yellow-primary);
+    color: white;
+    box-shadow:  1rem 1rem 2rem hsl(179deg 62% 28% / 50%);
+    margin-top: 2em;
+}
+
+footer{
+    margin-top: 4em;
 }
