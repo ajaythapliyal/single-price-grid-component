@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://single-price-grid-component-sable-six.vercel.app/)
+- Live Site URL: (https://single-price-grid-component-sable-six.vercel.app/)
 
 ## My process
 
